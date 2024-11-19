@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="main.css" />
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:_CopySource msdt:dt="string">https://hwbwave15-my.sharepoint.com/personal/blaket8_hwbcymru_net/Documents/WBQWebsiteFinal/index.html</mso:_CopySource>
+<mso:Order msdt:dt="string">218300.000000000</mso:Order>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+  <body>
+    <header>
+      <h1>Building a healthier Wales</h1>
+      <p>The figures problems and possible solutions</p>
+    </header>
+    <div id="Overview">
+      <p class="ComplementaryText">An</p>
+      <h2>Overview</h2>
+      <ul>
+        <li>
+          <p>-></p>
+          <h3>Importance of healthcare</h3>
+          <p>
+            Healthcare and welbeing forms a prominent part of overall quality
+            life as well as life expectancy. It is so important that it has been
+            listed as one of the United Nations SDGs for as “Good Health and
+            Wellbeing” and can even be part of the Welsh Government’s future
+            generations goals for a “Healthier Wales”
+          </p>
+        </li>
+        <li>
+          <p>-></p>
+          <h3>The healthcare problem</h3>
+          <p>
+            Many sources agree that the metrics used to measure the general
+            health of a society are not improving despite advancements in
+            technology and medicine. While each source will point the finger at
+            different causes for this problem, most agree that Covid-19 played a
+            large role in the decline of health overall.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div id="ChildrensHealth">
+      <p class="ComplementaryText">The issue with</p>
+      <h2>Children's Health in Wales</h2>
+      <div>
+        <h3>⚡Current Situation</h3>
+        <p>
+          The current situation as portrayed by the BBC is bleak. It tells the
+          tale of many children having many health related problems such as
+          obesity, mental health issues and tooth decay. This idea is further
+          built upon by the British Medical Associations' article showing that
+          the times for diagnositc tests on the NHS is very long and getting
+          longer.
+        </p>
+        <h3>🗒️Possible Causes</h3>
+        <p>
+          Covid-19 can be seen as a key contributor to all the health related
+          problems. Many children suffered loneliness and their development may
+          have been affected by spending years inside. It is also possible that
+          as many people didn't even go to the doctor or any medical
+          professional certain issues like tooth decay were not able to be
+          picked up on early.
+        </p>
+        <h3>🎬What is being done</h3>
+        <p>
+          The government states that they are "committed" to improving
+          healthcare after an open letter from health professionals from 20
+          different organsiations was written. There are also reaseachers at
+          Cardiff University that also found out that excersise can improve many
+          aspects of life including, obesity and mental health
+        </p>
+        <h3>🤞The outcome</h3>
+        <p>
+          Currently, waiting lists are still getting longer for diagnostic tests
+          with many people having to wait more than 36 weeks for tests. However,
+          while there are no current metrics directly about children's health,
+          life expectancy is dropping still which could show there is an issue
+          with healthcare or the general health levels of general society.
+        </p>
+      </div>
+      <h3>📍Quick Facts</h3>
+      <ul>
+        <li>BBC calls children’s health to be in a “Grim” state</li>
+        <li>20 Organisations signed a joint lettter</li>
+        <li>
+          Government say they are committed to improving healthcare services
+        </li>
+      </ul>
+    </div>
+    <div id="Covid19Effects">
+      <p class="ComplementaryText">What was</p>
+      <h2>Covid-19s Effects</h2>
+      <div class="2 Columns">
+        <div>
+          <div class="EqualHeightText">
+            <h3>Waiting lists</h3>
+            <p>
+              Waiting lists for diagnostic tests have been increasing with
+              little sign of slowing down since the Covid-19 Pandemic. Not only
+              have more people been on the waiting lists but more people are
+              waiting longer for tests with some people waiting 36 weeks
+            </p>
+          </div>
+          <div class="EqualHeightText StatDiv" style="text-align: center">
+            <h3>8x</h3>
+            <p>More people waiting more than 36 weeks than in March 2020</p>
+          </div>
+          <div>
+            <h4>Waiting lists</h4>
+            <canvas id="WaitingListsGraph"></canvas>
+            <p><b>116,358</b> patients currently on a waiting list</p>
+          </div>
+        </div>
+        <div>
+          <div class="EqualHeightText">
+            <h3>Life expectancy</h3>
+            <p>
+              Life expectancy has reduced back down to the level seen 10 years
+              ago with little sign of it improving.
+            </p>
+          </div>
+          <div class="EqualHeightText StatDiv" style="text-align: center">
+            <h3>80.6 Years</h3>
+            <p>Current Average life expectancy in Wales</p>
+          </div>
+          <div>
+            <h4>Life expectancy</h4>
+            <canvas id="LifeExpectancyGraph"></canvas>
+            <p><b>30 weeks</b> shorter life expectancy than before Covid-19</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <h3>A video to help illustrate the extent of the issue</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/JykM1X8i12w?si=vsHJB-xqhHe4z-Pi"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </center>
+    <div id="Comparison">
+      <p class="ComplementaryText">A quick</p>
+      <h2>Comparison</h2>
+      <ul>
+        <li>
+          <h3>3rd</h3>
+          <p>Out of the 4 countries in the UK for life expectancy</p>
+        </li>
+        <li>
+          <h3>Northern Ireland</h3>
+          <p>
+            Has seen more improvements in healthcare with them overtaking Wales
+            in 2014
+          </p>
+        </li>
+        <li>
+          <h3>7.5 year</h3>
+          <p>
+            Gap in life expectancy from least to most deprived areas in wales
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div id="Solutions">
+      <p class="ComplementaryText">Some</p>
+      <h2>Possible solutions</h2>
+      <ul>
+        <li>
+          <h3>Education</h3>
+          <p>
+            Improving education particularly around healthcare related matters
+            in Wales could improve poor health outcomes by allowing both adults
+            and children to make more informed lifestyle choices and make better
+            usage of the healthcare services that are available for them.
+            Education plays a crucial role in understanding preventative
+            measures, nutrition and healthy eating and mental health, equiping
+            people to make healthier descisions. Additionally, this should allow
+            more people to maintain meaningful employment as they take less time
+            off being unwell meaning the government can recover more money in
+            taxes to fund the NHS.
+          </p>
+        </li>
+        <li>
+          <h3>Increase Funding</h3>
+          <p>
+            Increasing NHS funding in Wales could improve health outcomes by
+            reducing wait times, increasing access to services and enhancing the
+            quality of care. With more resources available, the NHS could expand
+            staff numbers and invest in modern equipment and technology allowin
+            for faster diagnosis and more effective treatments. Further
+            investment in the NHS could provide more consistent and high quality
+            care for Welsh communities ultimately leading to a healthier
+            population and less strain on healthcare resources.
+          </p>
+        </li>
+        <li>
+          <h3>Recruit more doctors</h3>
+          <p>
+            Recruiting more doctors in Wales could greatly improve health
+            outcomes by addressing critical shortages, reducing wait times and
+            ensuring patients recieve timely care. With high numbers of doctors,
+            the NHS could manage demand more effectively allowing for shorter
+            appointment wait times. More doctors could also reduce the stress
+            felt by overworked existing staff which could reduce turnover rates,
+            staff burnout and improve job satisfaction. All this leads to a
+            higher quality of care.
+          </p>
+        </li>
+        <li>
+          <h3>Preventative care</h3>
+          <p>
+            Expanding preventative care in Wales could significantly improve
+            health outcomes by addressing health issues before they become
+            servere or expensive to treat. Preventative care, including regular
+            checks and vaccinations can help catch diseases early. It can also
+            encourage a healthier lifestyle which lowers risks associated with
+            smoking, poor diet and inactivity. By investing in preventative care
+            measures the, Wales could reduce the burden on the NHS and improve
+            overall health outcomes making healthcare more sustainable and
+            accessible long term.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const WaitingListsctx = document
+        .getElementById("WaitingListsGraph")
+        .getContext("2d");
+
+      const WaitingListsmyChart = new Chart(WaitingListsctx, {
+        type: "line", // You can change this to 'bar', 'pie', etc., for different chart types
+        data: {
+          labels: ["2020", "2021", "2022", "2023"], // X-axis labels
+          datasets: [
+            {
+              label: "Patients On any Wating List",
+              data: [73786, 99210, 109125, 116358], // Sample data points for each year
+              borderColor: "rgba(75, 192, 192, 1)", // Line color
+              backgroundColor: "rgba(75, 192, 192, 0.2)", // Fill color below the line
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: false, // Set to true if you want the y-axis to start at 0
+            },
+          },
+        },
+      });
+      const LifeExpectancyGraphctx = document
+        .getElementById("LifeExpectancyGraph")
+        .getContext("2d");
+
+      const LifeExpectancyGraphmyChart = new Chart(LifeExpectancyGraphctx, {
+        type: "line", // You can change this to 'bar', 'pie', etc., for different chart types
+        data: {
+          labels: [
+            "2006 to 2008",
+            "2008 to 2010",
+            "2010 to 2012",
+            "2012 to 2014",
+            "2014 to 2016",
+            "2016 to 2018",
+            "2018 to 2020",
+            "2020 to 2022",
+          ], // X-axis labels
+          datasets: [
+            {
+              label: "Female",
+              data: [81.5, 82.1, 82.6, 82.8, 82.8, 82.9, 82.8, 82.6], // Sample data points for each year
+              borderColor: "rgba(75, 192, 192, 1)", // Line color
+              backgroundColor: "rgba(75, 192, 192, 1)", // Fill color below the line
+              borderWidth: 2,
+            },
+            {
+              label: "Male",
+              data: [77.4, 78, 78.7, 79, 79.1, 79.2, 79, 78.6], // Sample data points for each year
+              borderColor: "#3264a8", // Line color
+              backgroundColor: "rgba(75, 192, 192, 0.2)", // Fill color below the line
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: false, // Set to true if you want the y-axis to start at 0
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    height: 90vh;
+    background-image: url("Castle.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header h1 {
+    padding-left: 10%;
+    padding-top: 15%;
+    font-size: 3em;
+}
+
+header p {
+    padding-left: 10%;
+}
+
+body > div {
+    padding: 3%;
+
+}
+
+body > div > h2 {
+    font-size: 2.5em;
+    line-height: 0.7em;
+}
+
+#Overview {
+    height: 70vh
+}
+
+#Overview > ul {
+    list-style: none;
+    
+}
+
+#Overview > ul > li {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7%;
+    width: 90%
+}
+
+#Overview > ul > li > p {
+    width: 30%
+}
+
+
+#ChildrensHealth {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+#ChildrensHealth > div {
+    padding-left: 5%;
+    padding-top: 1%;
+    width: 60%;
+}
+
+#ChildrensHealth > div > h3 {
+    padding-top: 1%;
+}
+
+#ChildrensHealth > div > p {
+    padding-left: 1%;
+}
+
+#Covid19Effects {
+    min-height: 100vh;
+}
+
+#Covid19Effects   h3 {
+    font-size: 2.75rem;
+}
+
+#Covid19Effects   h4 {
+    font-size: 2rem;
+}
+
+#Covid19Effects > div {
+    /* two equal columns */
+
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
+#Covid19Effects > div > div {
+    width: 35%;
+}
+
+#Covid19Effects  .StatDiv{
+    padding-top: 5%;
+}
+#Covid19Effects  .StatDiv > h3 {
+    font-size: 2.5em;
+}
+
+/* #Covid19Effects > b:has(> p) {
+    margin-bottom: 90%;
+} */
+
+.EqualHeightText {
+    height: 30%;
+}
+
+
+#Comparison {
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 25vh;
+}
+
+#Comparison > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
+#Comparison > ul > li {
+    width: 30%;
+}
+
+#Solutions {
+    height: 80vh;
+}
+
+#Solutions > ul {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+    gap: 1%; /* Space between grid items */
+    list-style: none;
+    padding: 0;
+    margin-left: 15%;
+}
+
+/* Added text align center and border to large screen  shaddow*/
+
+#Solutions > ul > li {
+    padding-top: 5vh;
+    width: 70%;
+    text-align: center;
+    border: 1px #000000 solid;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+#Solutions > ul > li > h3 {
+    color: #3264a8;
+}
+
+#Solutions  h3 {
+    text-align: center;
+}
+
+
+
+/* Media Query */
+@media (max-width: 768px) {
+    header {
+        height: 50vh;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    body > div > h2 {
+        font-size: 2em;
+    }
+
+    #Overview > ul {
+        width: 100%;
+    }
+
+    #Overview > ul > li {
+        display: block;
+    }
+
+    #Overview > ul > li > p {
+        width: 100%;
+    }
+
+    #ChildrensHealth > div {
+        width: 98%;
+    }
+
+    #Covid19Effects > div {
+        display: block;
+    }
+
+    #Covid19Effects > div > div {
+        width: 100%;
+    }
+
+    #Comparison > ul {
+        display: block;
+    }
+
+    #Comparison > ul > li {
+        width: 90%;
+        padding-bottom: 2.5%
+    }
+
+    #Solutions > ul {
+        display: block;
+        margin-left: 0;
+        
+    }
+
+    #Solutions > ul > li {
+        width: 100%;
+        padding: 0;
+        border: none;
+        text-align: left;
+        padding-bottom: 2.5%
+    }
+
+    #Solutions  h3 {
+        font-size: 1.5em;
+        text-align: left;
+    }
+}
